@@ -15,8 +15,8 @@ namespace CameraDistortEffect
         [Tooltip("Set (1, 0) for te original value :p")] public Vector2 BottomLeftCorner = new Vector2(1, 0);
 
         [Header("Fade Settings Settings")]
-        [Tooltip("Pixels positions are between 0 and 1. Do not use numbers more biggers")][Range(0, 1)] public float VerticalPointIndex;
-        [Tooltip("Pixels positions are between 0 and 1. Do not use numbers more biggers")][Range(0, 1)] public float FadeHeight;
+        [Tooltip("Pixels positions are between 0 and 1. Do not use bigger numbers")][Range(0, 1)] public float VerticalPointIndex;
+        [Tooltip("Pixels positions are between 0 and 1. Do not use bigger numbers")][Range(0, 1)] public float FadeHeight;
 
 
         void OnRenderImage(RenderTexture src, RenderTexture dest)
